@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Department - Home</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="home">
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">CSE @ SSN</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <input type="search" placeholder="Search..." id="searchBox">
+        <button id="darkModeToggle">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="home-hero">
+    <div class="hero-content">
+      <h1>Welcome to the Department of Computer Science & Engineering</h1>
+      <p>Shaping innovators, researchers, and global leaders in computing.</p>
+      <a href="about.html" class="button button-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights container">
+    <p></p>
+    <h2 class="text-center">Explore Our Department</h2>
+    <div class="highlight-grid">
+      <div class="card">
+        <h3>Programs</h3>
+        <p>Undergraduate, Postgraduate, and Doctoral programs designed for excellence.</p>
+        <a href="programs.html" class="button button-secondary">View Programs</a>
+      </div>
+      <div class="card">
+        <h3>Research</h3>
+        <p>Cutting-edge research in AI, ML, Data Science, and beyond.</p>
+        <a href="research.html" class="button button-secondary">Explore Research</a>
+      </div>
+      <div class="card">
+        <h3>Faculty</h3>
+        <p>Dedicated professors and researchers mentoring future leaders.</p>
+        <a href="faculty.html" class="button button-secondary">Meet Faculty</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Events -->
+  <section class="news-events container">
+    <h2 class="text-center">Latest News & Events</h2>
+    <div id="newsFeed" class="news-grid">
+      <!-- JS will inject items here -->
+    </div>
+  </section>
+
+  <!-- Placement Stats -->
+  <section class="placements container">
+    <h2 class="text-center">Placement Highlights</h2>
+    <canvas id="placementChart" width="400" height="200"></canvas>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Department of Computer Science & Engineering, SSN College of Engineering</p>
+    <p><a href="policies.html">Policies</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

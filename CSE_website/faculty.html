@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty | CSE Department</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="faculty">
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">CSE @ SSN</h1>
+      <button id="navToggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="faculty.html" class="active">Faculty</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Faculty</h1>
+      <p><a href="home.html">Home</a> › Faculty</p>
+    </div>
+  </section>
+
+  <!-- Filter Controls -->
+  <section class="container">
+    <h2>Meet Our Faculty</h2>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="professor">Professors</button>
+      <button class="filter-btn" data-filter="associate">Associate Professors</button>
+      <button class="filter-btn" data-filter="assistant">Assistant Professors</button>
+    </div>
+
+    <!-- Faculty Grid -->
+    <div class="faculty-grid">
+      <!-- Example faculty cards -->
+      <div class="faculty-card professor">
+        <img src="assets/faculty1.jpg" alt="Dr. A. Kumar">
+        <h3>Dr. A. Kumar</h3>
+        <p>Professor</p>
+        <p>Research: Artificial Intelligence, Machine Learning</p>
+      </div>
+
+      <div class="faculty-card associate">
+        <img src="assets/faculty2.jpg" alt="Dr. B. Priya">
+        <h3>Dr. B. Priya</h3>
+        <p>Associate Professor</p>
+        <p>Research: Data Mining, Big Data Analytics</p>
+      </div>
+
+      <div class="faculty-card assistant">
+        <img src="assets/faculty3.jpg" alt="Dr. C. Ramesh">
+        <h3>Dr. C. Ramesh</h3>
+        <p>Assistant Professor</p>
+        <p>Research: Cybersecurity, Networks</p>
+      </div>
+
+      <div class="faculty-card professor">
+        <img src="assets/faculty4.jpg" alt="Dr. D. Meena">
+        <h3>Dr. D. Meena</h3>
+        <p>Professor</p>
+        <p>Research: Computer Vision, Deep Learning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Department of Computer Science & Engineering, SSN College of Engineering</p>
+    <p><a href="policies.html">Policies</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

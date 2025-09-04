@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | CSE Department</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="contact">
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">CSE @ SSN</h1>
+      <button id="navToggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p><a href="home.html">Home</a> › Contact</p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="container contact-info">
+    <h2>Department of Computer Science & Engineering</h2>
+    <p><strong>Address:</strong> SSN College of Engineering, Kalavakkam, Tamil Nadu, India</p>
+    <p><strong>Phone:</strong> +91 44 2746 9700</p>
+    <p><strong>Email:</strong> cse@ssn.edu.in</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="container form-section">
+    <h2>Send Us a Message</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+  </section>
+
+  <!-- Map -->
+  <section class="container map-section">
+    <h2>Find Us</h2>
+    <div class="map-placeholder">
+      <!-- Google Maps Embed -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1993388232804!2d80.196828!3d12.748449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f73d2b8a7f23%3A0xe580a2cfae11d0c3!2sSSN%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1693834112512!5m2!1sen!2sin"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Department of Computer Science & Engineering, SSN College of Engineering</p>
+    <p><a href="policies.html">Policies</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

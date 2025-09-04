@@ -1,0 +1,432 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+  background: #0b3d91;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.nav-tools {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Hero */
+.home-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../images/campus.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-primary {
+  background: #0b3d91;
+  color: #fff;
+}
+
+.button-secondary {
+  background: #0066cc;
+  color: #fff;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Highlights */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* News */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #0b3d91;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #ddd;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: #222;
+}
+
+body.dark-mode .card {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+/* Page Header */
+.page-header {
+  background: #0066cc;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.page-header a {
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Vision & Mission */
+.vision-mission .split {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.vision-mission h3 {
+  margin-bottom: 0.5rem;
+}
+
+.vision-mission ul {
+  margin-left: 1.5rem;
+}
+
+/* Accreditation */
+.accreditation {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e9f3ff;
+  border-left: 4px solid #0b3d91;
+}
+
+/* Facts Grid */
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.fact-grid .card h3 {
+  font-size: 2rem;
+  color: #0b3d91;
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0b3d91;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none; /* hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Nav */
+#navToggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #0b3d91;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  #navToggle {
+    display: block;
+    color: #fff;
+  }
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  background: #e9f3ff;
+  border: 1px solid #0b3d91;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.tab-btn.active {
+  background: #0b3d91;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 1rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Faculty Page */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  background: #e9f3ff;
+  border: 1px solid #0b3d91;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.filter-btn.active {
+  background: #0b3d91;
+  color: #fff;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.faculty-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.faculty-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Accordion */
+.accordion {
+  margin-top: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  background: #e9f3ff;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: #d0e7ff;
+}
+
+.accordion-body {
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.accordion-body ul {
+  margin-left: 1.2rem;
+}
+
+/* Contact Page */
+.contact-info {
+  margin: 2rem 0;
+  line-height: 1.6;
+}
+
+.form-section {
+  margin: 2rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 600px;
+}
+
+form input, form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #005fa3;
+}
+
+.form-message {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.form-message.success { color: green; }
+.form-message.error { color: red; }
+
+.map-section {
+  margin: 3rem 0;
+}
+
+/* Policies Page */
+.policies .accordion-header {
+  background: #f8f8f8;
+  font-size: 1.05rem;
+}
+
+.policies .accordion-header:hover {
+  background: #e0e0e0;
+}
+
+
+
+
+
+
